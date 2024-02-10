@@ -1,0 +1,249 @@
+* {
+  text-decoration-line: none;
+  font-family: "Noto Sans KR", sans-serif;
+}
+
+.container {
+  width: 100vw;
+  height: 30vh;
+  background-color: #f5f7fb;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+ 
+}
+
+.killian-sven {
+  width: 70%;
+  height: 260px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 2px 0px rgba(126, 126, 126, 0.3);
+  background-color: white;
+  display: flex;
+  align-items: center;
+}
+
+.killian-sven-name {
+  line-height: 5px;
+}
+
+.profile {
+  position: relative;
+  margin: 20px;
+  margin-left: 60px;
+}
+
+.Profile-name {
+  display: flex;
+  flex-direction: column;
+}
+
+.Sven-btn {
+  width: 100px;
+  height: 40px;
+  margin-top: 25px;
+  border-radius: 2px;
+  color: white;
+  background-color: #66a8e7;
+  border: none;
+}
+
+.Profile-name-line {
+  border: 1.5% solid #d5d5d5;
+  width: 1;
+  height: 80%;
+  position: relative;
+  margin-left: 55%;
+}
+
+.Profile-list {
+  font-weight: bolder;
+  margin: 3%;
+  flex-grow: 1.5;
+}
+
+.Profile-list-II {
+  flex-grow: 2;
+}
+
+
+.Header-Profile-name{
+  font-size: 20px;
+  color: #66a8e7;
+  position: relative;
+  margin-top: 2%;
+  margin-right: 65%;
+  
+  
+}
+
+
+
+.Header-Profile-name-line{
+  border: 1px none ;
+  width: 4%;
+  height: 1%;
+  position: relative;
+  top: 0.5%;
+  margin-right: 80.5%;
+  background-color: #66a8e7;
+  
+ 
+  
+  
+}
+
+.Header-Profile-name-lineII{
+  border: 1.5px none ;
+  width: 65.3%;
+  height: 0.35%;
+  
+  position:absolute;
+  top: 28.4%;
+  right: 14.9%;
+  background-color: #d5d5d5;
+ 
+}
+
+
+.container-II{
+  width: 100vw;
+  height: 60vh;
+  background-color: #f5f7fb;
+  display: flex;
+  justify-content: center;
+  
+
+  
+}
+
+
+.Works{
+  width: 8%;
+  height: 320px;
+  background-color: white;
+  box-shadow: 2px 2px 2px 0px rgba(126, 126, 126, 0.3);
+  border-radius: 10px;
+  
+}
+
+.ABOUT-SKILLS{
+  width: 50%;
+  height: 620px;
+  background-color: white;
+  box-shadow: 2px 2px 2px 0px rgba(126, 126, 126, 0.3);
+  border-radius: 10px;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+
+
+.Works-indtroduce{
+  position: relative;
+  margin-left: 25px;
+}
+
+
+
+.ABOUT-SKILLS-introduce{
+  position: relative;
+  margin-left: 55px;
+}
+
+
+
+.Profile-about-skills-line{
+  border: 0.1px none ;
+  width: 45%;
+  height: 0.2%;
+  background-color: #d5d5d5;
+  margin-left:55px;
+  position:absolute;
+  top: 50%;
+}
+
+
+.SKILLS{
+  position: absolute;
+  margin-top: 130px;
+  
+ 
+}
+
+
+
+.SKILLS-tag{
+  width: 45%;
+  height: 5.5%;
+  background-color: white;
+  position: absolute;
+  margin-top: 175px;
+  margin-left: 45px;
+}
+
+
+.SKILLS-tag-btn{
+  width: 8%;
+  height: 50%;
+  margin: 5px;
+  font-weight: bold;
+  border-radius: 25px;
+  background-color: white;
+}
+
+
+
+.Sign-up{
+  width: 10%;
+  height: 290px;
+  background-color: white;
+  box-shadow: 2px 2px 2px 0px rgba(126, 126, 126, 0.3);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+  line-height: 56px;
+
+}
+
+.Sign-up-btn{
+  width: 100px;
+  height: 40px;
+  font-size: small;
+  font-weight: bold;
+  background-color: #66a8e7;
+  border: none;
+  border-radius: 4px;
+  color: white;
+}
+
+
+.People-u-might{
+  width:10%;
+  height: 90px;
+  background-color: #cad3e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: absolute;
+  margin-top: 12%;
+  margin-left: 60%;
+
+}
+
+.People-u-might-line{
+  border: 0.1px  ;
+  width: 80%;
+  height: 0.7%;
+  background-color: #d5d5d5;
+}
+
+.People-u-might-profile{
+  position: absolute;
+  margin-left: 60%;
+}
