@@ -3,141 +3,295 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Landing page II</title>
+    <title>A man Who Creative Deblisher</title>
     <link href="style.css" rel="stylesheet" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+    <link href="nomalrize.css" rel="stylesheet" />
+
+    <script
+      src="https://kit.fontawesome.com/8d2343d8e8.js"
       crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
   </head>
   <body>
-    <div class="container">
-      <div class="killian-sven">
-
-        <div class="profile"><img src="img/profile-pic.png" /></div>
-
-
-        <div class="Profile-name">
-          <h2 class="killian-sven-name">Killian sven</h2>
-          <span style="margin-bottom: 20px">Front-end Designer</span>
-          <i class="fa-solid fa-location-dot fa-xl" style="color: #66a8e7"
-            ><span style="font-size: 20px">서울 마포구</span></i>
-          <button class="Sven-btn">Contact</button>
+    <!--ETC,,,-->
+    <div class="cursor">
+      <div class="cursor_default">
+        <span class="cursor_default_inner"></span>
+        <div class="cursor_trace">
+          <span id="cursorTraceInner" class="cursor_Trace_Inner"></span>
         </div>
-
-
-        <hr class="Profile-name-line"></hr>
-
-      <div class="Profile-list">
-        <p>Location</p>
-        <p>Age</p>
-        <p>Exprience</p>
-        <p>School</p>
       </div>
-
-      <div class="Profile-list-II">
-        <p>서울 마포구</p>
-        <p>90년생</p>
-        <p>신입</p>
-        <p>천조국대토목학과</p>
-      </div>
-    
-      </div>
-
-      <header class="Header-Profile-name">Profile</header>
-      <hr class="Header-Profile-name-line"></hr>
-      <hr class="Header-Profile-name-lineII"></hr>
-
-      
     </div>
+    <!---->
 
-    <div class="container-II">
-
-      <div class="Works">
-        <h3 style="margin-left: 25px;" >WORKS</h3>
-        <p class="Works-indtroduce">
-              Landing page design
-              Flyer design<br>
-              Vue.js To-do app<br>
-              Shopphing page design
-        </p><br>
-              
+    <!--section01-->
+    <section id="sec01" class="section01">
+      <div class="Galaxy"></div>
+      <h1 class="h1Typoghrapy" id="h1"><img src="img/SVG/Typography.svg" /></h1>
+      <div class="starDust">
+        <img src="./img/SVG/starDust.svg" alt="" />
       </div>
-
-      <div class="ABOUT-SKILLS">
-        <h3 style="margin-left: 55px;">ABOUT</h3>
-
-        <p class="ABOUT-SKILLS-introduce">
-        I am a front-end designer who is excellent at Bootstrap, Sass,Foundation. I have dealt lots of<br>
-        in-house design works and outsource things. if you wnat to check my portfolio, please visit<br>
-        Killiansven.com
-        </p>
-        
-        <hr class="Profile-about-skills-line"></hr>
-
-        <h3 class="SKILLS" style="margin-left: 55px;">SKILLS</h3>
-
-        <div class="SKILLS-tag">
-          <button class="SKILLS-tag-btn">
-            HTML5
-          </button>
-          <button class="SKILLS-tag-btn">
-             JavaScript
-          </button>
-          <button class="SKILLS-tag-btn">
-            CSS3
-          </button>
-          <button class="SKILLS-tag-btn">
-            Illustrator
-          </button>
-          <button class="SKILLS-tag-btn">
-            Photoshop
-          </button>
+      <div class="Earth">
+        <img src="./img/SVG/Earth.svg" alt="" />
+      </div>
+      <div class="lightYear">
+        <img src="./img/SVG/lightYear.svg" />
+      </div>
+      <div class="sec01GlassMophism">
+        <div id="introMain">
+          <p id="scroll-Down-text">Scroll Down</p>
+          <img
+            id="downArrowIcon"
+            src="./img/down-arrow.png"
+            alt="downArrowicon"
+          />
         </div>
-
-
-  
       </div>
+      <div id="dimd"></div>
+    </section>
 
-     
-      
-
-      
-      <div class="Sign-up">
-        <i class="fa-solid fa-tag fa-4x" style="color: #66a8e7;">
-        </i>Find me at Linkedout.com <button class="Sign-up-btn">Sign Up</button>
-        <span style="color: #66a8e7; font-size:15px;">Already a member?</span>
+    <!--section02-->
+    <section id="sec02" class="section02">
+      <div class="section02Contents">
+        <div class="sec02GlassMophism">
+          <h2 class="portfolio">Portfolio</h2>
+        </div>
       </div>
-
-
-      <div class="People-u-might">
-        
-        <p>People You Might Know</p>
-        <hr class="People-u-might-line"></hr>
-
+    </section>
+    <div class="worKs">
+      <div class="worKsContents"></div>
+    </div>
+    <!--section03-->
+    <section id="sec03" class="section03">
+      <div class="section03Contents">
+        <img class="bodyBackground" img src="img/SVG/bodyBackground.svg" />
+        <img
+          class="deCoration"
+          src="img/SVG/decoRation.svg"
+          alt="earth deCoration"
+        />
+        <img class="sec03Earth" src="img/SVG/Earth002.svg" alt="earth" />
+        <div class="sec03GlassMophism">
+          <h2 class="introH2">
+            Let's see<br />
+            What i had Done,<br />
+            My Works.
+          </h2>
+        </div>
+        <div id="introMain">
+          <p id="scroll-Down-text">Scroll Down</p>
+          <img
+            id="downArrowIcon"
+            src="./img/down-arrow.png"
+            alt="downArrowicon"
+          />
+        </div>
+        <div class="R2D2"><img src="img/SVG/R2D2.svg" alt="R2D2" /></div>
+        <img class="bodyBackgroundII" img src="img/SVG/bodyBackground.svg" />
+        <div class="sec03GlassMophismWrapper">
+          <ul id="list-item-wrapper">
+            <li class="list-item">프론트엔드</li>
+            <li class="list-item">퍼블리셔</li>
+            <li class="list-item">UIUX</li>
+            <li class="list-item">코딩</li>
+            <li class="list-item">디자인</li>
+            <li class="list-item">인터페이스:::</li>
+            <li class="list-item">::Adobe:</li>
+            <li class="list-item">Figma</li>
+            <li class="list-item">SVG::</li>
+            <li class="list-item">Illustrator::</li>
+            <li class="list-item">Photoshop</li>
+            <li class="list-item">XD</li>
+            <li class="list-item">HTML</li>
+            <li class="list-item">CSS</li>
+            <li class="list-item">::JavaScript</li>
+            <li class="list-item">Git</li>
+            <li class="list-item">Mark Up</li>
+            <li class="list-item">GSAP</li>
+            <li class="list-item">Rel=</li>
+            <li class="list-item">Stylesheet</li>
+            <li class="list-item">DeepDive</li>
+            <li class="list-item">Script::</li>
+            <li class="list-item">Responsive Web</li>
+            <li class="list-item">Interaction Web:::</li>
+            <li class="list-item">Parrallex</li>
+            <li class="list-item">Scroll</li>
+            <li class="list-item">Header</li>
+            <li class="list-item">Footer::</li>
+          </ul>
+          <div id="sec03IntroMain">
+            <p id="sec3Scroll-Down-text">Scroll Down</p>
+            <img
+              id="downArrowIcon"
+              src="./img/down-arrow.png"
+              alt="downArrowicon"
+            />
+          </div>
+        </div>
       </div>
-      
-      
-      <div class="People-u-might-profile">
+    </section>
+    <section id="panel1Img">
+      <img id="miniCarImg" src="./img/SVG/miniCar.svg" alt="miniCar" />
+    </section>
+    <!--h2 Project-->
+    <h2 id="proJects">PROJECTS</h2>
+    <!--section04-->
 
-      
-      
+    <section id="sec04" class="section04">
+      <img class="bodyBackground" img src="img/SVG/bodyBackground.svg" />
+      <div class="section04Contents">
+        <div class="skillBtn">
+          <div class="skillList"><p>#Illustrator</p></div>
+          <div class="skillList"><p>#Responsive</p></div>
+          <div class="skillList"><p>#Gsap</p></div>
+        </div>
+        <img class="airBnb" src="img/SVG/airBnb.svg" alt="airbnb" />
+        <div class="airBnbGlassMophism">
+          <h3>AIRBNB</h3>
+          <p class="usedSkill">HTML, CSS, JavaScript</p>
+
+          <a href="./Airbnb clonecoding/index.html" target="_blank"
+            ><span>Go site</span></a
+          >
+          <a
+            href="https://github.com/MotherBoardHal9000/airBnBCloneCoding"
+            target="_blank"
+            >Git hub</a
+          >
+        </div>
+        <div class="airBnbGlassMophismII">
+          <p>
+            에어 비앤비 메인사이트를 클론코딩하였습니다.<br />flex 사용과 더불어
+            마크업 구조이해 css 스타일링 작업 전반을 이해했습니다.
+          </p>
+        </div>
+        <img class="retroBoy" img src="img/SVG/RetroBoy.svg" />
+        <div class="retroBoyGlassMopism">
+          <h3>RETRO BOY</h3>
+          <p class="usedSkill">HTML, CSS, @Mediaquery, JavaScript, Gsap</p>
+          <p>
+            어도비 일러스트레이터 활용을 통한 SVG적극 활용과 반응형 레이아웃
+            중점 작업입니다.<br />Gsap과 더불어 if,else 문 사용을 통한 버튼
+            기능을 구현하였습니다.
+          </p>
+          <a href="./Retro Boys/index.html" target="_blank">Go site</a>
+          <a href="./Retro Boys VanillaJS ver.JS/index.html" target="_blank"
+            >Go site(vanilla Js.ver)</a
+          >
+          <a
+            href="https://github.com/MotherBoardHal9000/RetroBoys"
+            target="_blank"
+            >Git hub</a
+          >
+        </div>
+        <div class="nanoITGlassMophism">
+          <h3>NANO-IT</h3>
+          <p>HTML, CSS, @Mediaquery, JavaScript</p>
+          <a href="./Nano-IT renewal/Nano-it renewal/index.html" target="_blank"
+            ><span>Go site</span></a
+          >
+          <a
+            href="https://github.com/MotherBoardHal9000/NanoITrenewal"
+            target="_blank"
+            >Git hub</a
+          >
+        </div>
+        <div class="nanoITGlassMophismII">
+          <p>
+            대학생 시절 현장실습 업체였던 <br />나노 아이티 홈페이지를 리뉴얼
+            하였습니다.<br />video 태그 사용과 영상소스 반응형 중점으로
+            작업하였습니다.
+          </p>
+        </div>
+        <img class="nanoIT" src="img/SVG/NANO_IT.svg" />
+        <div class="imagiNation"><img class="imagiNationIMG" /></div>
+        <div class="imagiNationIMGGlassMophism">
+          <h3>IMAGINATION</h3>
+          <p class="usedSkill">HTML, CSS, JavaScript, Canvas</p>
+          <p>
+            시니어 개발자가 개발한 그라데이션 기법과<br />
+            디자인 시안을 기반으로 퍼블리싱 하였습니다.<br />
+            CANVAS 태그 와 es6+ 이후 문법의<br />
+            길라잡이가 되어줬습니다.
+          </p>
+          <a href="./Imagination/index.html " target="_blank"
+            ><span>Go site</span></a
+          >
+          <a
+            href="https://github.com/MotherBoardHal9000/Imagination"
+            target="_blank"
+            ><span>Git hub</span></a
+          >
+        </div>
+        <div class="rebeHayan">
+          <img src="img/SVG/REBE-hayan.svg" />
+        </div>
+        <div class="rebeHayanGlassMophism">
+          <h3>REBEHAYAN</h3>
+          <span class="usedSkill"> HTML, CSS, JavaScript </span>
+          <a href="./REBE-HAYAN/index.html" target="_blank"
+            ><span>Go site</span></a
+          >
+          <a
+            href="https://github.com/MotherBoardHal9000/REBE-HAYAN"
+            target="_blank"
+            ><span>Git hub</span></a
+          >
+          <p>
+            국내 관공서 표준 디자인 형태 레이아웃과 position:absolute 밑
+            inline-block 요소를 이용한 요소의 가로배치를 이해하였습니다.
+          </p>
+        </div>
       </div>
-  
+    </section>
+    <!--section05-->
+    <section id="sec05" class="section05">
+      <div id="sec05Contents" class="section05Contents">
+        <img id="bodyBackground" src="img/SVG/bodyBackground.svg" />
+        <img id="saZabi" src="img/SVG/Sazabi.svg" />
       </div>
-
-
-
+      <div id="fixedDescription">
+        <h2>보다 더 나은<br />내일을 위하여</h2>
       </div>
+    </section>
 
-  
+    <!--section06-->
+    <section id="sec06" class="section06">
+      <div id="sec06Contents" class="section06Contents">
+        <img id="nitingGail" src="img/SVG/nitingGail.svg" />
+      </div>
+    </section>
 
+    <!--section07-->
+    <section id="sec07" class="section07">
+      <div id="sec07Contents" class="section07Contents">
+        <h2>한걸음, 한걸음씩</h2>
+        <p>
+          성장과 팽창은 똑같이 커져도 실속이 다릅니다. 반복과 개선만이 살 길
+          입니다. <br />총알처럼 앞서나가는 추진력도 중요하지만 유지하는
+          지구력도 중요합니다. <br />끈질긴 인내력으로 작업을 완수해내는 마라톤
+          퍼블리셔 이정운 입니다.<br />일러스트와 같은 발산적 행위와
+          미니멀리즘으로써 디자인하고 빼는 레이아웃 구성까지 골고루 좋아합니다.
+        </p>
+      </div>
+    </section>
+
+    <footer id="white-wrapper">
+      <div class="white-wrapperContents">
+        <img src="img/SVG/footerTyphograpy.svg" />
+        <div class="footerCard1">
+          <p>경계를 넘나들며<br />자유롭게 일합니다</p>
+        </div>
+        <div class="footerCard2"></div>
+        <div class="footerCard3"></div>
+      </div>
+      <img id="airUpTempo" src="img/SVG/upTempo.svg" />
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.1/ScrollToPlugin.min.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
