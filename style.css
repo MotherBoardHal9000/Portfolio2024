@@ -230,7 +230,7 @@ a {
   position: absolute;
   width: 100vw;
   height: 100vh;
-  background-image: url(./img/SVG/GalaxybackGround.svg);
+  background-image: url(./img/SVG/GalaxybackGround.png);
   background-size: cover;
 }
 
@@ -242,11 +242,16 @@ a {
 }
 
 .lightYear {
-  width: 1000px;
-  height: 1000px;
+  width: 600px;
+  height: 600px;
   position: absolute;
-  left: 150px;
+  left: 650px;
   top: 200px;
+}
+
+.lightYear img {
+  object-fit: contain;
+  height: 1000px;
 }
 
 .sec01GlassMophism {
@@ -685,10 +690,10 @@ a {
 
 .retroBoy {
   width: 680px;
-  height: 600px;
+  object-fit: contain;
   position: absolute;
   left: 50px;
-  top: 560px;
+  top: 258px;
 }
 
 .retroBoyGlassMopism {
