@@ -338,15 +338,14 @@ a {
 
 .bodyBackground {
   background-image: url(./img/SVG/bodyBackground.svg);
-  background-repeat: repeat-y;
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-color: transparent;
   position: absolute;
 }
 
 .bodyBackgroundII {
-  background-size: contain;
+  background-size: cover;
   background-position: center;
   background-color: transparent;
   position: absolute;
@@ -690,10 +689,9 @@ a {
 
 .retroBoy {
   width: 680px;
-  object-fit: contain;
   position: absolute;
   left: 50px;
-  top: 258px;
+  top: 340px;
 }
 
 .retroBoyGlassMopism {
@@ -981,8 +979,8 @@ a {
   text-align: center;
   line-height: 70px;
   position: absolute;
-  left: 46%;
-  transform: translateX(-46%);
+  left: 44%;
+  transform: translateX(-44%);
   bottom: 100px;
   opacity: 0;
 }
