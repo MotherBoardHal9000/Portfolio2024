@@ -1,7 +1,7 @@
 @media only screen and (min-width: 1280px) {
-    /*section*/
+  /*section*/
 
-.h1Typoghrapy {
+  .h1Typoghrapy {
     width: 3840px;
     height: 2160px;
     position: absolute;
@@ -10,7 +10,7 @@
     transform: rotate(0.03deg);
     z-index: 5;
   }
-  
+
   .section01 {
     position: relative;
     margin: 0 auto;
@@ -18,7 +18,7 @@
     height: 100vh;
     background-color: transparent;
   }
-  
+
   .Galaxy {
     position: absolute;
     width: 100vw;
@@ -26,27 +26,27 @@
     background-image: url(./img/SVG/GalaxybackGround.png);
     background-size: cover;
   }
-  
+
   .Earth {
     position: absolute;
     left: 600px;
     width: 3000px;
     height: 3000px;
   }
-  
+
   .lightYear {
-    width: 600px;
-    height: 600px;
+    width: 65vw;
+    height: 65vh;
     position: absolute;
-    left: 650px;
+    left: 500px;
     top: 200px;
   }
-  
+
   .lightYear img {
     object-fit: contain;
-    height: 1000px;
+    height: 85%;
   }
-  
+
   .sec01GlassMophism {
     position: absolute;
     bottom: 100px;
@@ -65,14 +65,14 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   }
-  
+
   .section01 {
     width: 100vw;
     height: 100vh;
     display: block;
     position: relative;
   }
-  
+
   .section01 div {
     position: absolute;
   }
@@ -96,39 +96,38 @@
   }
   /*section02*/
   .section02 {
-    min-width: 1920px;
-    max-width: 100vw;
+    width: 100vw;
     height: 400px;
     position: relative;
     background-color: #0b1215;
   }
-  
+
   .section02Contents {
-    width: 1600px;
+    width: 70%;
     height: 400px;
     margin: 0 auto;
     position: relative;
     background-color: #0b1215;
   }
-  
+
   .portfolio {
     color: #ffffff;
     font-size: 100px;
     font-weight: 600;
     position: absolute;
-    top: 200px;
+    top: 150px;
     left: 50%;
     transform: translateX(-50%);
+    border: 1px solid red;
   }
   /*section03*/
   .section03 {
-    min-width: 1920px;
     max-width: 100vw;
     height: 2600px;
     position: relative;
     background-color: #0b1215;
   }
-  
+
   .bodyBackground {
     background-image: url(./img/SVG/bodyBackground.svg);
     background-size: cover;
@@ -136,7 +135,7 @@
     background-color: transparent;
     position: absolute;
   }
-  
+
   .bodyBackgroundII {
     background-size: cover;
     background-position: center;
@@ -148,22 +147,22 @@
     left: 50%;
     transform: translateX(-50%);
   }
-  
+
   .section03Contents {
-    width: 1720px;
+    width: 70vw;
     height: 2600px;
     margin: 0 auto;
     position: relative;
     background-color: #0b1215;
   }
-  
+
   .deCoration {
     position: absolute;
     top: -150px;
     left: 50%;
     transform: translateX(-50%);
   }
-  
+
   .sec03Earth {
     width: 800px;
     height: 800px;
@@ -172,7 +171,7 @@
     left: 50%;
     transform: translateX(-50%);
   }
-  
+
   .sec03GlassMophism {
     position: absolute;
     top: 130px;
@@ -191,7 +190,7 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   }
-  
+
   .introH2 {
     color: white;
     font-size: 50px;
@@ -199,7 +198,7 @@
     text-align: center;
     margin-top: 100px;
   }
-  
+
   #introMain {
     width: 120px;
     height: 50px;
@@ -212,23 +211,23 @@
     font-size: 70px;
     font-weight: 400;
   }
-  
+
   #scroll-Down-text {
     color: #ffffff;
     opacity: 0.6;
     font-size: 1rem;
     margin-top: 40px;
   }
-  
+
   @keyframes UpandDown {
     0% {
       transform: translateY(0);
     }
-  
+
     50% {
       transform: translateY(-20px);
     }
-  
+
     100% {
       transform: translateY(0px);
     }
@@ -242,7 +241,7 @@
     height: 33px;
     animation: UpandDown 1s infinite;
   }
-  
+
   .R2D2 img {
     width: 280px;
     height: 390px;
@@ -251,7 +250,7 @@
     margin-top: 650px;
     transform: translateX(-50%);
   }
-  
+
   .sec03GlassMophismWrapper {
     position: absolute;
     top: 1200px;
@@ -270,7 +269,7 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   }
-  
+
   #list-item-wrapper {
     position: absolute;
     left: 50%;
@@ -278,14 +277,14 @@
     transform: translateX(-50%) translateY(-50%);
     width: 450px;
   }
-  
+
   .list-item {
     display: inline;
     font-size: 47px;
     font-weight: 600;
     text-align: center;
   }
-  
+
   .list-item::before {
     display: inline-block;
     background-image: url(./img/dark_house.png);
@@ -294,7 +293,7 @@
     width: 51px;
     height: 53px;
   }
-  
+
   #sec03IntroMain {
     width: 120px;
     height: 50px;
@@ -313,22 +312,22 @@
     font-size: 1rem;
     margin-top: 40px;
   }
-  
+
   .list-item#on {
     color: #ffffff;
   }
-  
+
   .list-item#on::before {
     content: "";
     background-image: url(./img/light_house.png);
   }
-  
+
   #panel1Img {
     height: 420px;
     position: relative;
     background-color: #0b1215;
   }
-  
+
   #miniCarImg {
     width: 220px;
     height: 220px;
@@ -336,7 +335,7 @@
     right: -150px;
     bottom: 150px;
   }
-  
+
   #proJects {
     color: #ffffff;
     position: absolute;
@@ -345,7 +344,7 @@
     font-size: 80px;
     font-weight: 600;
   }
-  
+
   .skillBtn {
     width: 1200px;
     height: 100px;
@@ -353,11 +352,11 @@
     margin-top: 230px;
     right: 50px;
   }
-  
+
   .usedSkill {
     color: grey;
   }
-  
+
   .skillBtn .skillList {
     width: fit-content;
     padding-top: 20px;
@@ -371,15 +370,14 @@
     float: right;
     margin: 10px;
   }
-  
+
   .skillList:nth-child(3) {
     background-color: #ff8500;
   }
-  
+
   /*section04*/
   .section04 {
-    max-width: 100vw;
-    min-width: 1920px;
+    width: 100vw;
     height: 3100px;
     background-color: #0b1215;
   }
@@ -389,7 +387,7 @@
     margin: 0 auto;
     position: relative;
   }
-  
+
   .section04Contents h2 {
     color: #ffffff;
     position: absolute;
@@ -398,7 +396,7 @@
     font-size: 4rem;
     font-style: normal;
   }
-  
+
   .airBnbh3 {
     color: #ffffff;
     position: absolute;
@@ -407,7 +405,7 @@
     font-weight: 700;
     top: 300px;
   }
-  
+
   .airBnbGlassMophism {
     position: absolute;
     top: 305px;
@@ -428,7 +426,7 @@
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
     font-weight: 100;
   }
-  
+
   .airBnbGlassMophism a {
     width: 30px;
     height: 20px;
@@ -437,12 +435,12 @@
     background-color: #ff8500;
     font-weight: 100;
   }
-  
+
   .airBnbGlassMophism a:hover {
     background-color: ghostwhite;
     color: black;
   }
-  
+
   .airBnbGlassMophismII {
     position: absolute;
     top: 485px;
@@ -464,14 +462,14 @@
     font-weight: 100;
     line-height: 20px;
   }
-  
+
   .airBnbGlassMophism h3 {
     color: #ffffff;
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 30px;
   }
-  
+
   .airBnb {
     width: 680px;
     height: 590px;
@@ -479,14 +477,15 @@
     left: 460px;
     top: 200px;
   }
-  
+
   .retroBoy {
     width: 680px;
+    height: fit-content;
     position: absolute;
     left: 50px;
-    top: 340px;
+    top: 625px;
   }
-  
+
   .retroBoyGlassMopism {
     position: absolute;
     top: 700px;
@@ -508,11 +507,11 @@
     font-weight: 100;
     line-height: 20px;
   }
-  
+
   .retroBoyGlassMopism p {
     margin-bottom: 40px;
   }
-  
+
   .retroBoyGlassMopism a {
     width: 30px;
     height: 20px;
@@ -521,18 +520,18 @@
     background-color: #ff8500;
     font-weight: 100;
   }
-  
+
   .retroBoyGlassMopism a:hover {
     background-color: ghostwhite;
     color: black;
   }
-  
+
   .retroBoyGlassMopism h3 {
     font-size: 2rem;
     font-weight: normal;
     margin-bottom: 20px;
   }
-  
+
   .nanoITGlassMophism {
     position: absolute;
     top: 1115px;
@@ -552,7 +551,7 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   }
-  
+
   .nanoITGlassMophismII {
     color: white;
     position: absolute;
@@ -574,7 +573,7 @@
     font-weight: 100;
     line-height: 20px;
   }
-  
+
   .nanoITGlassMophism a {
     width: 50px;
     height: 35px;
@@ -583,23 +582,23 @@
     background-color: #ff8500;
     font-weight: 100;
   }
-  
+
   .nanoITGlassMophism a:hover {
     background-color: ghostwhite;
     color: black;
   }
-  
+
   .nanoITGlassMophism h3 {
     font-size: 2rem;
     font-weight: 400;
     margin-bottom: 10px;
   }
-  
+
   .nanoITGlassMophism p {
     color: grey;
     margin-bottom: 20px;
   }
-  
+
   .nanoIT {
     width: 680px;
     height: 450px;
@@ -607,7 +606,7 @@
     top: 1080px;
     right: 58px;
   }
-  
+
   .imagiNationIMG {
     width: 600px;
     height: 500px;
@@ -620,7 +619,7 @@
     top: 1515px;
     left: 50px;
   }
-  
+
   .imagiNationIMGGlassMophism {
     position: absolute;
     top: 1515px;
@@ -642,13 +641,13 @@
     font-weight: 100;
     line-height: 20px;
   }
-  
+
   .imagiNationIMGGlassMophism h3 {
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 20px;
   }
-  
+
   .imagiNationIMGGlassMophism a {
     width: 30px;
     height: 20px;
@@ -657,16 +656,16 @@
     background-color: #ff8500;
     font-weight: 100;
   }
-  
+
   .imagiNationIMGGlassMophism a:hover {
     background-color: ghostwhite;
     color: black;
   }
-  
+
   .imagiNationIMGGlassMophism p {
     margin-bottom: 40px;
   }
-  
+
   .rebeHayan {
     width: 1100px;
     height: 480px;
@@ -676,14 +675,14 @@
     background-color: #a37dec;
     border-radius: 25px;
   }
-  
+
   .rebeHayan img {
     width: 1100px;
     height: 580px;
     bottom: 0px;
     position: absolute;
   }
-  
+
   .rebeHayanGlassMophism {
     position: absolute;
     top: 2525px;
@@ -705,7 +704,7 @@
     font-weight: 100;
     line-height: 20px;
   }
-  
+
   .rebeHayanGlassMophism a {
     width: 30px;
     height: 20px;
@@ -713,39 +712,37 @@
     border-radius: 4px;
     background-color: #ff8500;
   }
-  
+
   .rebeHayanGlassMophism p {
     margin-top: 30px;
   }
-  
+
   .rebeHayanGlassMophism a:hover {
     background-color: ghostwhite;
     color: black;
   }
-  
+
   .rebeHayanGlassMophism h3 {
     font-size: 2rem;
     font-weight: 500;
     margin-bottom: 20px;
   }
-  
+
   /*section05*/
   .section05 {
     width: 100vw;
-    min-width: 1920px;
     height: 2650px;
     background-color: #0b1215;
-    position: relative;
   }
-  
+
   .section05Contents {
-    width: 100%;
+    width: 100vw;
     height: 1000px;
-    position: absolute;
+    position: relative;
     margin: 0 auto;
     text-align: center;
   }
-  
+
   #bodyBackground {
     position: absolute;
     bottom: 300px;
@@ -754,7 +751,7 @@
     left: 40%;
     transform: translateX(-40%);
   }
-  
+
   #saZabi {
     width: 500px;
     height: 650px;
@@ -764,20 +761,22 @@
     transform: translateX(-50%);
     bottom: 300px;
   }
-  
+
   #fixedDescription {
+    width: 23vw;
+    height: fit-content;
     color: white;
     font-size: 40px;
     font-weight: 800;
     text-align: center;
     line-height: 70px;
     position: absolute;
-    left: 46%;
-    transform: translateX(-46%);
+    left: 40%;
+    transform: translateX(-30%);
     bottom: 100px;
     opacity: 0;
   }
-  
+
   /*section06*/
   .section06 {
     width: 100vw;
@@ -786,7 +785,7 @@
     background-color: #0b1215;
     position: relative;
   }
-  
+
   .section06Contents {
     width: 100%;
     height: 900px;
@@ -795,7 +794,7 @@
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
   }
-  
+
   .section06Contents img {
     position: absolute;
     left: 50%;
@@ -803,7 +802,7 @@
     height: 700px;
     bottom: 200px;
   }
-  
+
   /*section07*/
   .section07 {
     width: 100vw;
@@ -812,7 +811,7 @@
     background-color: #0b1215;
     position: relative;
   }
-  
+
   .section07Contents {
     width: 100%;
     height: 1000px;
@@ -821,7 +820,7 @@
     transform: translateX(-50%);
     color: white;
   }
-  
+
   .section07Contents h2 {
     font-size: 80px;
     font-weight: 600;
@@ -830,7 +829,7 @@
     transform: translateX(-50%);
     top: 0px;
   }
-  
+
   .section07Contents p {
     font-size: 1rem;
     font-weight: 100;
@@ -842,7 +841,7 @@
     margin-top: 300px;
     text-align: center;
   }
-  
+
   /*whitewrapper*/
   #white-wrapper {
     position: relative;
@@ -853,14 +852,14 @@
     height: 100vh;
     z-index: 9000;
   }
-  
+
   .white-wrapperContents {
     width: 1200px;
     height: 100%;
     margin: 0 auto;
     position: relative;
   }
-  
+
   .white-wrapperContents img {
     position: absolute;
     left: 75px;
@@ -868,7 +867,7 @@
     width: 650px;
     height: 400px;
   }
-  
+
   .white-wrapperContents img ~ img {
     position: absolute;
     right: 65px;
@@ -876,7 +875,7 @@
     width: 600px;
     height: 600px;
   }
-  
+
   .footerCard1 {
     width: 300px;
     height: 200px;
@@ -907,7 +906,7 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   }
-  
+
   .footerCard3 {
     position: absolute;
     top: 620px;
@@ -925,7 +924,7 @@
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   }
-  
+
   #airUpTempo {
     position: absolute;
     bottom: 0px;
@@ -933,5 +932,4 @@
     height: 200px;
     right: 200px;
   }
-  
 }
