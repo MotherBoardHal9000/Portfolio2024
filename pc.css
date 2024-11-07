@@ -531,7 +531,7 @@
     margin-bottom: 20px;
   }
 
-  .nanoITGlassMophism {
+  .snuGlassMophism {
     position: absolute;
     top: 1115px;
     left: 50px;
@@ -551,7 +551,7 @@
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   }
 
-  .nanoITGlassMophismII {
+  .snuGlassMophismII {
     color: white;
     position: absolute;
     top: 1300px;
@@ -573,7 +573,7 @@
     line-height: 20px;
   }
 
-  .nanoITGlassMophism a {
+  .snuGlassMophism a {
     width: 50px;
     height: 35px;
     padding: 15px;
@@ -582,27 +582,27 @@
     font-weight: 100;
   }
 
-  .nanoITGlassMophism a:hover {
+  .snuGlassMophism a:hover {
     background-color: ghostwhite;
     color: black;
   }
 
-  .nanoITGlassMophism h3 {
+  .snuGlassMophism h3 {
     font-size: 2rem;
     font-weight: 400;
     margin-bottom: 10px;
   }
 
-  .nanoITGlassMophism p {
+  .snuGlassMophism p {
     color: grey;
     margin-bottom: 20px;
   }
 
-  .nanoIT {
+  .SNU {
     width: 680px;
-    height: 450px;
+    height: 500px;
     position: absolute;
-    top: 1080px;
+    top: 1055px;
     right: 58px;
   }
 

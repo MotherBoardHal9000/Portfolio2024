@@ -172,10 +172,9 @@ a {
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 9999;
   mix-blend-mode: difference;
-  transition: transform 0.3s;
-  display: none;
+  transition: transform 0.1s;
+  display: inline-block;
 }
 
 .cursor--active .cursor__trace__inner {
@@ -184,7 +183,6 @@ a {
 
 .cursor_default_inner {
   position: absolute;
-  display: inline-block;
   width: 20px;
   height: 20px;
   background-color: rgba(10, 27, 16, 2.5);
@@ -601,6 +599,8 @@ a {
   transform: translateX(-50%);
   font-size: 4rem;
   font-style: normal;
+  transform-origin: bottom;
+  transform: translate3d(-20px, 0px, 2px);
 }
 
 .airBnbh3 {
@@ -738,7 +738,7 @@ a {
   margin-bottom: 20px;
 }
 
-.nanoITGlassMophism {
+.snuGlassMophism {
   position: absolute;
   top: 1115px;
   left: 50px;
@@ -758,7 +758,7 @@ a {
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
 }
 
-.nanoITGlassMophismII {
+.snuGlassMophismII {
   color: white;
   position: absolute;
   top: 1300px;
@@ -780,7 +780,7 @@ a {
   line-height: 20px;
 }
 
-.nanoITGlassMophism a {
+.snuGlassMophism a {
   width: 50px;
   height: 35px;
   padding: 15px;
@@ -789,27 +789,27 @@ a {
   font-weight: 100;
 }
 
-.nanoITGlassMophism a:hover {
+.snuGlassMophism a:hover {
   background-color: ghostwhite;
   color: black;
 }
 
-.nanoITGlassMophism h3 {
+.snuGlassMophism h3 {
   font-size: 2rem;
   font-weight: 400;
   margin-bottom: 10px;
 }
 
-.nanoITGlassMophism p {
+.snuGlassMophism p {
   color: grey;
   margin-bottom: 20px;
 }
 
-.nanoIT {
+.SNU {
   width: 680px;
-  height: 450px;
+  height: 500px;
   position: absolute;
-  top: 1080px;
+  top: 1055px;
   right: 58px;
 }
 
