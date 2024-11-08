@@ -27,15 +27,15 @@ const loop = (requestAnimationFrame) => {
   starDust.style.transform = `translateX(${targetX / 8}px)`;
   lightYear.style.transform = `translateX(${targetX / 12}px)`;
 };
-loop(requestAnimationFrame);
+loop(window.requestAnimationFrame);
 
 window.addEventListener("mousemove", function (addEventListener) {
   const cursorDefaultInner = document.querySelector(".cursor_default_inner");
   const cursorTraceInner = document.querySelector(".cursor_Trace_Inner");
-  cursorDefaultInner.style.top = addEventListener.clientY + "px";
-  cursorDefaultInner.style.left = addEventListener.clientX + "px";
-  cursorTraceInner.style.top = addEventListener.clientY + "px";
-  cursorTraceInner.style.left = addEventListener.clientX + "px";
+  cursorDefaultInner.style.top = addEventListener.clientY += "px";
+  cursorDefaultInner.style.left = addEventListener.clientX += "px";
+  cursorTraceInner.style.top = addEventListener.clientY += "px";
+  cursorTraceInner.style.left = addEventListener.clientX += "px";
   window.requestAnimationFrame(loop);
 });
 
@@ -165,7 +165,7 @@ window.addEventListener("scroll", function (addEventListener) {
     }px)`;
 
     fixedDescription.style.opacity =
-      (window.scrollY - fixedDescriptionAppearTiming) / 400;
+      (window.scrollY - fixedDescriptionAppearTiming) / 1000;
   } else if (window.scrollY > fixedDescriptionAppearEnds) {
     fixedDescription.style.transform = `translateY(0px)`;
     fixedDescription.style.opacity = 1;
