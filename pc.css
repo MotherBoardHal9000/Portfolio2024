@@ -779,14 +779,13 @@
   /*section06*/
   .section06 {
     width: 100vw;
-    min-width: 1920px;
     height: 900px;
     background-color: #0b1215;
     position: relative;
   }
 
   .section06Contents {
-    width: 100%;
+    width: 100vw;
     height: 900px;
     position: absolute;
     left: 50%;
@@ -805,14 +804,13 @@
   /*section07*/
   .section07 {
     width: 100vw;
-    min-width: 1920px;
     height: 1000px;
     background-color: #0b1215;
     position: relative;
   }
 
   .section07Contents {
-    width: 100%;
+    width: 100vw;
     height: 1000px;
     position: absolute;
     left: 50%;
