@@ -994,7 +994,7 @@ a {
 }
 
 .section06Contents {
-  width: 100%;
+  width: 100vw;
   height: 900px;
   position: absolute;
   left: 50%;
@@ -1006,7 +1006,8 @@ a {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  height: 700px;
+  height: 1200px;
+  width: 2100px;
   bottom: 200px;
 }
 
