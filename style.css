@@ -173,18 +173,19 @@ a {
   right: 0;
   bottom: 0;
   mix-blend-mode: difference;
-  transition: transform 0.1s;
-  display: inline-block;
+  transition: transform 0.01ms;
+  z-index: 9999;
+  pointer-events: none;
 }
 
 .cursor--active .cursor__trace__inner {
-  transform: scale(0.5);
+  transform: scale(1.5);
 }
 
 .cursor_default_inner {
   position: absolute;
-  width: 20px;
-  height: 20px;
+  width: 40px;
+  height: 40px;
   background-color: rgba(10, 27, 16, 2.5);
   border: 2px solid #ffffff;
   border-radius: 50%;
