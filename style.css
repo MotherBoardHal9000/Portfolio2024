@@ -180,8 +180,8 @@ a {
 
 .cursor--active .cursor__trace__inner {
   transform: scale(20.5);
-  transition: all 0.1ms;
-  animation-duration: 0.1ms;
+  transition: all 0.1s;
+  animation-duration: 0.1s;
 }
 
 .cursor_default_inner {
