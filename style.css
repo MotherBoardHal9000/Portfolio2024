@@ -1006,9 +1006,9 @@ a {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
-  height: 1200px;
-  width: 2100px;
-  bottom: 200px;
+  height: 1100px;
+  width: 1500px;
+  bottom: 0px;
 }
 
 /*section07*/
