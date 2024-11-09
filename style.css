@@ -3,6 +3,8 @@
   src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
     format("woff");
   font-weight: 400;
+  font-weight: 700;
+
   font-style: normal;
 }
 
@@ -10,7 +12,7 @@
   font-family: "Pretendard-Regular";
   src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
     format("woff");
-  font-weight: 400;
+
   font-style: normal;
   scroll-behavior: smooth;
   text-decoration: none;
@@ -1108,15 +1110,19 @@ a {
 .footerCard1 {
   width: 300px;
   height: 200px;
-  background-color: #373c68;
+  background-color: #f3f1f9;
   border-radius: 25px;
   position: absolute;
   top: 400px;
   left: 100px;
-  color: white;
+  color: #210085;
   padding: 40px;
   line-height: 40px;
   font-size: 1.5rem;
+}
+
+.footerCard1 p {
+  font-weight: 900;
 }
 .footerCard2 {
   position: absolute;
@@ -1135,6 +1141,7 @@ a {
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   color: #ffffff;
+  font-size: 1.5rem;
 }
 
 .footerCard2 h2 {
@@ -1164,11 +1171,7 @@ a {
   width: 1000px;
   height: 50px;
   padding: 30px;
-  display: flex;
-  justify-content: space-between;
-  color: white;
-  margin: 0 auto;
-  align-items: center;
+  color: #ffffff;
 }
 
 .footerCard3 h2 {
