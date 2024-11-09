@@ -1,5 +1,16 @@
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
 * {
-  font-family: pretendard, sans-serif;
+  font-family: "Pretendard-Regular";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
   font-style: normal;
   scroll-behavior: smooth;
   text-decoration: none;
@@ -821,7 +832,7 @@ a {
 .imagiNationIMG {
   width: 600px;
   height: 500px;
-  background-image: url(./img/bg_75.gif);
+  background-image: url(./img/bg_75.webp);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
