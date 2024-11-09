@@ -151,6 +151,7 @@ body {
   padding: 0;
   margin: 0;
   position: relative;
+  scroll-behavior: smooth;
 }
 img {
   width: 80vw;
@@ -1122,6 +1123,11 @@ a {
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  color: #ffffff;
+}
+
+.footerCard2 h2 {
+  color: white;
 }
 
 .footerCard3 {
@@ -1129,7 +1135,7 @@ a {
   top: 620px;
   left: 100px;
   width: 950px;
-  height: 640px;
+  height: 340px;
   background: linear-gradient(
     135deg,
     rgba(255, 255, 255, 0.1),
@@ -1140,12 +1146,25 @@ a {
   border-radius: 20px;
   border: 1px solid rgba(255, 255, 255, 0.18);
   box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+  color: white;
 }
 
-#airUpTempo {
+.footerSpanBox {
+  width: 1000px;
+  height: 50px;
+  padding: 30px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.footerCard3 h2 {
+  font-size: 3rem;
+  font-weight: 800;
   position: absolute;
-  bottom: 0px;
-  width: 700px;
-  height: 200px;
-  right: 200px;
+  top: 150px;
+  left: 50%;
+  transform: translateX(-50%);
 }
