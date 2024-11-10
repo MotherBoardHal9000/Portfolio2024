@@ -1074,11 +1074,12 @@ a {
   width: 100vw;
   height: 100vh;
   z-index: 9000;
+  padding-top: 200px;
 }
 
 .white-wrapperContents {
   width: 1200px;
-  height: 100%;
+  height: 70vh;
   margin: 0 auto;
   position: relative;
 }
@@ -1181,4 +1182,11 @@ a {
   top: 150px;
   left: 50%;
   transform: translateX(-50%);
+}
+
+.copy {
+  position: absolute;
+  bottom: -70px;
+  left: 0px;
+  font-size: 1.9rem;
 }

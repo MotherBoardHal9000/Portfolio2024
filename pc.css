@@ -926,11 +926,10 @@ body {
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
   }
 
-  #airUpTempo {
+  .copy {
     position: absolute;
-    bottom: 0px;
-    width: 700px;
-    height: 200px;
-    right: 200px;
+    bottom: -70px;
+    left: 0px;
+    font-size: 1.9rem;
   }
 }
