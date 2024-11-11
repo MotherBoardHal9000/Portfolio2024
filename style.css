@@ -157,8 +157,6 @@ table {
 }
 
 body {
-  width: 100%;
-  height: 100%;
   background-color: #0b1215;
   overflow-x: hidden;
   padding: 0;
@@ -310,10 +308,8 @@ a {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  min-width: 3840px;
-  max-width: 100vw;
-  min-height: 2160px;
-  max-height: 100vw;
+  width: 100vw;
+  height: 100vw;
   background-color: transparent;
   z-index: 6;
 }

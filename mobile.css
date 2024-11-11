@@ -1,53 +1,30 @@
 body {
   background-color: #0b1215;
-  overflow-x: hidden;
   padding: 0;
   margin: 0;
-  position: relative;
   scroll-behavior: smooth;
+}
+
+body div {
+  overflow: hidden;
+  overflow-y: hidden;
 }
 
 @media only screen and (max-width: 768px) {
   .cursor {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    mix-blend-mode: difference;
-    transition: all 0.9ms;
-    z-index: 9999;
-    pointer-events: none;
+    display: none;
   }
 
   .cursor--active .cursor__trace__inner {
-    transform: scale(20.5);
-    transition: all 0.1s;
-    animation-duration: 0.1s;
+    display: none;
   }
 
   .cursor_default_inner {
-    position: absolute;
-    width: 40px;
-    height: 40px;
-    background-color: rgba(10, 27, 16, 2.5);
-    border: 2px solid #ffffff;
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    mix-blend-mode: difference;
-    transition: all 0.1s;
+    display: none;
   }
 
   .cursor_Trace_Inner {
-    position: absolute;
-    display: inline-block;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    background-color: #f3f3f3;
-    transform: translate(-50%, -50%);
-    transition: all 0.1s;
-    opacity: 0.5;
+    display: none;
   }
   .h1Typoghrapy {
     display: none;
@@ -57,7 +34,6 @@ body {
   .section01 {
     width: 100vw;
     height: 100vh;
-    display: block;
     position: relative;
   }
 
@@ -81,11 +57,11 @@ body {
 
   .Earth {
     position: absolute;
-    width: 564px;
-    height: 564px;
+    width: 550px;
+    height: 550px;
     background-size: cover;
-    left: 45%;
-    transform: translateX(-45%);
+    left: -20%;
+    transform: translateX(-20%);
     top: -90px;
   }
 
@@ -94,8 +70,10 @@ body {
   }
 
   .lightYear {
-    width: 300px;
-    height: 300px;
+    width: 200px;
+    height: 200px;
+
+    left: 80px;
   }
 
   .lightYear img {
@@ -135,6 +113,7 @@ body {
     height: 100vh;
     z-index: 6;
     background-color: transparent;
+    position: absolute;
   }
 
   /*section02*/
@@ -255,13 +234,7 @@ body {
     }
   }
   #downArrowIcon {
-    position: absolute;
-    left: 40%;
-    transform: translateX(-40%), rotate(30px);
-    top: 39px;
-    width: 33px;
-    height: 33px;
-    animation: UpandDown 1s infinite;
+    display: none;
   }
 
   .R2D2 img {
@@ -297,7 +270,7 @@ body {
     left: 50%;
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
-    width: 450px;
+    width: 75vw;
     padding: 5px;
   }
 
@@ -311,7 +284,7 @@ body {
   .list-item::before {
     display: inline-block;
     background-image: url(./img/dark_house.png);
-    background-size: 51px 53px;
+    background-size: 53px 53px;
     content: "";
     width: 51px;
     height: 53px;
@@ -372,15 +345,12 @@ body {
   }
 
   .skillBtn {
-    width: 1200px;
-    height: 100px;
-    position: absolute;
-    margin-top: 230px;
-    right: 50px;
+    display: none;
   }
 
   .usedSkill {
     color: grey;
+    display: none;
   }
 
   .skillBtn .skillList {
@@ -395,21 +365,24 @@ body {
     font-weight: 300;
     float: right;
     margin: 10px;
+    display: none;
   }
 
   .skillList:nth-child(3) {
     background-color: #ff8500;
+    display: none;
   }
 
   /*section04*/
   .section04 {
     width: 100vw;
-    height: 5100px;
+    height: 3100px;
     background-color: #0b1215;
+    border: 1px solid transparent;
   }
   .section04Contents {
     width: 100vw;
-    height: 5100px;
+    height: 3100px;
     margin: 0 auto;
     display: none;
   }
@@ -424,7 +397,7 @@ body {
   .mobileSection {
     width: 100vw;
     height: 5100px;
-    margin: 0 auto;
+
     position: relative;
     display: flex;
     flex-direction: column;
@@ -483,33 +456,31 @@ body {
   #bodyBackground {
     position: absolute;
     bottom: 300px;
-    width: 800px;
-    height: 900px;
-    left: 40%;
-    transform: translateX(-40%);
+    width: 90vw;
+    height: 600px;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 1px solid red;
   }
 
   #saZabi {
-    width: 500px;
-    height: 650px;
-    position: absolute;
-    left: 50%;
-    margin-top: 30px;
-    transform: translateX(-50%);
+    width: 100vw;
+    height: 500px;
+    position: relative;
+    margin: 0 auto;
     bottom: 300px;
+    border: 1px solid red;
   }
 
   #fixedDescription {
-    width: 23vw;
+    width: 100vw;
     height: fit-content;
     color: white;
-    font-size: 40px;
+    font-size: 1rem;
     font-weight: 800;
     text-align: center;
     line-height: 70px;
     position: absolute;
-    left: 40%;
-    transform: translateX(-30%);
     bottom: 100px;
     opacity: 0;
   }
@@ -535,8 +506,10 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
+    width: 100%;
     height: 700px;
     bottom: 200px;
+    background-size: contain;
   }
 
   /*section07*/
@@ -581,7 +554,7 @@ body {
   #white-wrapper {
     position: relative;
     background-color: #14173f;
-    background-image: url(./img/SVG/footerBacgroundimg.svg);
+
     background-size: contain;
     width: 100vw;
     height: 100vh;
@@ -589,7 +562,7 @@ body {
   }
 
   .white-wrapperContents {
-    width: 1200px;
+    width: 100vw;
     height: 100%;
     margin: 0 auto;
     position: relative;
@@ -601,14 +574,16 @@ body {
     top: 30px;
     width: 650px;
     height: 400px;
+    display: none;
   }
 
   .white-wrapperContents img ~ img {
     position: absolute;
     right: 65px;
     bottom: 0px;
-    width: 600px;
+    width: 70%;
     height: 600px;
+    display: none;
   }
 
   .footerCard1 {
@@ -623,6 +598,7 @@ body {
     padding: 40px;
     line-height: 40px;
     font-size: 1.5rem;
+    display: none;
   }
   .footerCard2 {
     position: absolute;
@@ -640,6 +616,7 @@ body {
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    display: none;
   }
 
   .footerCard3 {
@@ -658,6 +635,7 @@ body {
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    display: none;
   }
 
   .copy {
@@ -665,5 +643,6 @@ body {
     bottom: -70px;
     left: 0px;
     font-size: 1.9rem;
+    display: none;
   }
 }

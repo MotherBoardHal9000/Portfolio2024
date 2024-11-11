@@ -58,16 +58,17 @@ if (matchMedia("only screen and (max-width: 768px)").matches) {
   const percent = (num, totalNum) => {
     return ((num / totalNum) * 100).toFixed(0);
   };
+
   //Gsap 걸면 되려 섹션이랑 중첩됨 걸지말것.
-  const listStyleChangeStartY = 1165;
-  const listStyleChangeStartEndY = 2275;
+  //Gsap end
+  const listStyleChangeStartY = 1300;
+  const listStyleChangeStartEndY = 2320;
 
   const listItems = document.querySelectorAll(".list-item");
 
   const division =
     (listStyleChangeStartEndY - listStyleChangeStartY) / listItems.length;
 
-  const panel1Img = document.getElementById("panel1Img"); //absolute 적용시 스크립트 적용이 안됨 감싸는 요소로 해야함
   //
   //
   const fixedDescriptionAppearTiming = 9010;
