@@ -15,7 +15,7 @@ body {
     right: 0;
     bottom: 0;
     mix-blend-mode: difference;
-    transition: all 0.1s;
+    transition: all 0.9ms;
     z-index: 9999;
     pointer-events: none;
   }
@@ -84,8 +84,9 @@ body {
     width: 564px;
     height: 564px;
     background-size: cover;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 45%;
+    transform: translateX(-45%);
+    top: -90px;
   }
 
   .starDust {
@@ -93,13 +94,16 @@ body {
   }
 
   .lightYear {
-    display: none;
-    opacity: 0;
+    width: 300px;
+    height: 300px;
   }
 
   .lightYear img {
-    display: none;
-    opacity: 0;
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    left: -400px;
+    top: 0px;
   }
 
   .section01 {
@@ -110,22 +114,7 @@ body {
   }
 
   .sec01GlassMophism {
-    position: absolute;
-    bottom: 200px;
-    left: 45%;
-    transform: translateX(-45%);
-    width: 180px;
-    height: 80px;
-    background: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0)
-    );
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    display: none;
   }
   .section01 div {
     position: absolute;
@@ -151,7 +140,7 @@ body {
   /*section02*/
   .section02 {
     width: 100vw;
-    height: 400px;
+    height: 200px;
     background-color: #0b1215;
     position: relative;
   }
@@ -176,10 +165,9 @@ body {
   /*section03*/
   .section03 {
     width: 100vw;
-    height: 2600px;
+    height: 1600px;
     position: relative;
     background-color: #0b1215;
-    border: 1px solid red;
   }
 
   .bodyBackground {
@@ -188,7 +176,6 @@ body {
     background-position: center;
     background-color: transparent;
     position: absolute;
-    border: 1px solid red;
   }
 
   .bodyBackgroundII {
@@ -205,7 +192,7 @@ body {
 
   .section03Contents {
     width: 70vw;
-    height: 2600px;
+    height: 1600px;
     margin: 0 auto;
     position: relative;
     background-color: #0b1215;
@@ -213,7 +200,7 @@ body {
 
   .deCoration {
     position: absolute;
-    top: 20px;
+    top: 30px;
     left: 50%;
     transform: translateX(-55%);
     width: 100vw;
@@ -247,13 +234,11 @@ body {
     transform: translateX(-50%) translateY(-16%);
     font-size: 70px;
     font-weight: 400;
+    display: none;
   }
 
   #scroll-Down-text {
-    color: #ffffff;
-    opacity: 0.6;
-    font-size: 1rem;
-    margin-top: 10px;
+    display: none;
   }
 
   @keyframes UpandDown {
@@ -280,7 +265,7 @@ body {
   }
 
   .R2D2 img {
-    width: 180px;
+    width: 220px;
     height: 290px;
     position: absolute;
     left: 45%;
@@ -290,11 +275,11 @@ body {
 
   .sec03GlassMophismWrapper {
     position: absolute;
-    top: 300px;
+    top: 600px;
     left: 50%;
     transform: translateX(-50%);
-    width: 100vw;
-    height: 1300px;
+    width: 80vw;
+    height: 1000px;
     background: linear-gradient(
       135deg,
       rgba(255, 255, 255, 0.1),
@@ -304,7 +289,7 @@ body {
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    border: 1px solid red;
+    padding: 5px;
   }
 
   #list-item-wrapper {
@@ -313,12 +298,13 @@ body {
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
     width: 450px;
+    padding: 5px;
   }
 
   .list-item {
     display: inline;
-    font-size: 3rem;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 800;
     text-align: center;
   }
 
@@ -359,10 +345,16 @@ body {
     background-image: url(./img/light_house.png);
   }
 
+  .list-item#on {
+    color: #ffffff;
+  }
+
+  .list-item#on::before {
+    content: "";
+    background-image: url(./img/light_house.png);
+  }
   #panel1Img {
-    height: 420px;
-    position: relative;
-    background-color: #0b1215;
+    display: none;
   }
 
   #miniCarImg {
@@ -374,8 +366,9 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 80px;
+    font-size: 3rem;
     font-weight: 600;
+    margin-top: 80px;
   }
 
   .skillBtn {
@@ -411,354 +404,65 @@ body {
   /*section04*/
   .section04 {
     width: 100vw;
-    height: 3100px;
+    height: 5100px;
     background-color: #0b1215;
   }
   .section04Contents {
-    width: 1200px;
-    height: 3100px;
+    width: 100vw;
+    height: 5100px;
+    margin: 0 auto;
+    display: none;
+  }
+
+  .section04Contents div {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+  }
+
+  .mobileSection {
+    width: 100vw;
+    height: 5100px;
     margin: 0 auto;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    margin-top: 50px;
   }
 
-  .section04Contents h2 {
-    color: #ffffff;
-    position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 4rem;
-    font-style: normal;
-  }
-
-  .airBnbh3 {
-    color: #ffffff;
-    position: absolute;
-    left: 0%;
-    font-size: 3rem;
-    font-weight: 700;
-    top: 300px;
-  }
-
-  .airBnbGlassMophism {
-    position: absolute;
-    top: 305px;
-    left: 50px;
-    padding: 40px;
-    width: 400px;
-    height: 170px;
-    color: #ffffff;
-    background: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0)
-    );
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    font-weight: 100;
-  }
-
-  .airBnbGlassMophism a {
-    width: 30px;
-    height: 20px;
-    padding: 15px;
-    border-radius: 4px;
-    background-color: #ff8500;
-    font-weight: 100;
-  }
-
-  .airBnbGlassMophism a:hover {
-    background-color: ghostwhite;
-    color: black;
-  }
-
-  .airBnbGlassMophismII {
-    position: absolute;
-    top: 485px;
-    left: 50px;
-    width: 400px;
-    height: 200px;
-    padding: 50px;
-    color: white;
-    background: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0)
-    );
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    font-weight: 100;
-    line-height: 20px;
-  }
-
-  .airBnbGlassMophism h3 {
-    color: #ffffff;
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 30px;
-  }
-
-  .airBnb {
-    width: 680px;
-    height: 590px;
-    position: absolute;
-    left: 460px;
-    top: 200px;
-  }
-
-  .retroBoy {
-    width: 680px;
-    height: fit-content;
-    position: absolute;
-    left: 50px;
-    top: 625px;
-  }
-
-  .retroBoyGlassMopism {
-    position: absolute;
-    top: 700px;
-    right: 60px;
-    padding: 20px;
-    width: 400px;
-    height: 400px;
-    background: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0)
-    );
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    color: white;
-    font-weight: 100;
-    line-height: 20px;
-  }
-
-  .retroBoyGlassMopism p {
-    margin-bottom: 40px;
-  }
-
-  .retroBoyGlassMopism a {
-    width: 30px;
-    height: 20px;
-    padding: 15px;
-    border-radius: 4px;
-    background-color: #ff8500;
-    font-weight: 100;
-  }
-
-  .retroBoyGlassMopism a:hover {
-    background-color: ghostwhite;
-    color: black;
-  }
-
-  .retroBoyGlassMopism h3 {
-    font-size: 2rem;
-    font-weight: normal;
-    margin-bottom: 20px;
-  }
-
-  .snuGlassMophism {
-    position: absolute;
-    top: 1115px;
-    left: 50px;
-    padding: 40px;
-    width: 400px;
-    height: 180px;
-    background: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0)
-    );
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    color: white;
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-  }
-
-  .snuGlassMophismII {
-    color: white;
-    position: absolute;
-    top: 1300px;
-    left: 50px;
-    width: 400px;
-    height: 200px;
-    padding: 50px;
-    background: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0)
-    );
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    font-weight: 100;
-    line-height: 20px;
-  }
-
-  .snuGlassMophism a {
-    width: 50px;
-    height: 35px;
-    padding: 15px;
-    border-radius: 4px;
-    background-color: #ff8500;
-    font-weight: 100;
-  }
-
-  .snuGlassMophism a:hover {
-    background-color: ghostwhite;
-    color: black;
-  }
-
-  .snuGlassMophism h3 {
-    font-size: 2rem;
-    font-weight: 400;
-    margin-bottom: 10px;
-  }
-
-  .snuGlassMophism p {
-    color: grey;
-    margin-bottom: 20px;
-  }
-
-  .SNU {
-    width: 680px;
+  .airBnbMobile {
+    width: 80vw;
     height: 500px;
-    position: absolute;
-    top: 1055px;
-    right: 58px;
+    background-color: #ff5a5f;
+    border-radius: 25px;
   }
-
-  .imagiNationIMG {
-    width: 600px;
+  .retroBoyMobile {
+    width: 80vw;
     height: 500px;
-    background-image: url(./img/bg_75.gif);
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #308ac5;
+    border-radius: 25px;
+  }
+  .snuMobile {
+    width: 80vw;
+    height: 500px;
+    background-color: #1c2f57;
+    border-radius: 25px;
+  }
+  .imagiNationMobile {
+    width: 80vw;
+    height: 500px;
+    background-image: url(./img/bg_75.webp);
     background-size: cover;
     border-radius: 25px;
-    position: absolute;
-    top: 1515px;
-    left: 50px;
   }
-
-  .imagiNationIMGGlassMophism {
-    position: absolute;
-    top: 1515px;
-    right: 50px;
-    width: 485px;
+  .rebeHayanMobile {
+    width: 80vw;
     height: 500px;
-    padding: 50px;
-    color: white;
-    background: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0)
-    );
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    font-weight: 100;
-    line-height: 20px;
-  }
-
-  .imagiNationIMGGlassMophism h3 {
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 20px;
-  }
-
-  .imagiNationIMGGlassMophism a {
-    width: 30px;
-    height: 20px;
-    padding: 15px;
-    border-radius: 4px;
-    background-color: #ff8500;
-    font-weight: 100;
-  }
-
-  .imagiNationIMGGlassMophism a:hover {
-    background-color: ghostwhite;
-    color: black;
-  }
-
-  .imagiNationIMGGlassMophism p {
-    margin-bottom: 40px;
-  }
-
-  .rebeHayan {
-    width: 1100px;
-    height: 480px;
-    position: absolute;
-    left: 50px;
-    top: 2030px;
     background-color: #a37dec;
     border-radius: 25px;
-  }
-
-  .rebeHayan img {
-    width: 1100px;
-    height: 580px;
-    bottom: 0px;
-    position: absolute;
-  }
-
-  .rebeHayanGlassMophism {
-    position: absolute;
-    top: 2525px;
-    left: 50px;
-    width: 1100px;
-    height: 240px;
-    padding: 50px;
-    background: linear-gradient(
-      135deg,
-      rgba(255, 255, 255, 0.1),
-      rgba(255, 255, 255, 0)
-    );
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border-radius: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.18);
-    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    color: white;
-    font-weight: 100;
-    line-height: 20px;
-  }
-
-  .rebeHayanGlassMophism a {
-    width: 30px;
-    height: 20px;
-    padding: 15px;
-    border-radius: 4px;
-    background-color: #ff8500;
-  }
-
-  .rebeHayanGlassMophism p {
-    margin-top: 30px;
-  }
-
-  .rebeHayanGlassMophism a:hover {
-    background-color: ghostwhite;
-    color: black;
-  }
-
-  .rebeHayanGlassMophism h3 {
-    font-size: 2rem;
-    font-weight: 500;
-    margin-bottom: 20px;
   }
 
   /*section05*/

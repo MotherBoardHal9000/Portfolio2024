@@ -11,6 +11,11 @@ if (matchMedia("only screen and (max-width: 768px)").matches) {
   const Earth = section01[2];
   const lightYear = section01[3];
 
+  window.addEventListener("click", function () {
+    console.log(window.innerHeight);
+    console.log("what");
+  });
+
   window.addEventListener("mousemove", (addEventListener) => {
     x = addEventListener.pageX - window.innerWidth / 2;
     y = addEventListener.pageY - window.innerWidth / 2;
@@ -46,15 +51,25 @@ if (matchMedia("only screen and (max-width: 768px)").matches) {
     documentHeight =
       document.body.scrollHeight + coverHeight - window.innerHeight;
     dimd.style.backgroundColor = `rgba(11, 18, 21, ${
-      (0.25 + scrollNum) / 1000
+      (1.55 + scrollNum) / 800
     })`;
   });
 
   const percent = (num, totalNum) => {
     return ((num / totalNum) * 100).toFixed(0);
   };
-  //Gsap
+  //Gsap 걸면 되려 섹션이랑 중첩됨 걸지말것.
+  const listStyleChangeStartY = 1165;
+  const listStyleChangeStartEndY = 2275;
 
+  const listItems = document.querySelectorAll(".list-item");
+
+  const division =
+    (listStyleChangeStartEndY - listStyleChangeStartY) / listItems.length;
+
+  const panel1Img = document.getElementById("panel1Img"); //absolute 적용시 스크립트 적용이 안됨 감싸는 요소로 해야함
+  //
+  //
   const fixedDescriptionAppearTiming = 9010;
   const fixedDescriptionAppearEnds = 9180;
   const fixedDescription = document.getElementById("fixedDescription");
