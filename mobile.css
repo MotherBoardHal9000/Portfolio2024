@@ -485,11 +485,11 @@ body {
     height: 900px;
     background-color: #0b1215;
     position: relative;
-    margin-top: 200px;
+    margin-top: 300px;
   }
 
   .section06Contents {
-    width: 90vw;
+    width: 100vw;
     height: 600px;
   }
 
@@ -510,19 +510,16 @@ body {
     width: 100vw;
     height: 1000px;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
     color: white;
-    border: 1px solid red;
   }
 
   .section07Contents h2 {
-    font-size: 80px;
-    font-weight: 600;
+    font-size: 2.2rem;
+    font-weight: 500;
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    top: 0px;
+    left: 40%;
+    transform: translateX(-40%);
+    top: 50px;
   }
 
   .section07Contents p {
@@ -541,7 +538,6 @@ body {
   #white-wrapper {
     position: relative;
     background-color: #14173f;
-
     background-size: contain;
     width: 100vw;
     height: 100vh;
@@ -553,7 +549,6 @@ body {
     height: 100%;
     margin: 0 auto;
     position: relative;
-    border: 1px solid red;
   }
 
   .white-wrapperContents img {
