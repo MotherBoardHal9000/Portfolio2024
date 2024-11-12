@@ -1,47 +1,6 @@
 if (matchMedia("only screen and (max-width: 768px)").matches) {
   let x = 0;
   let y = 0;
-  let targetX = 0;
-  let targetY = 0;
-  const speed = 0.1;
-
-  const section01 = document.querySelectorAll(".section01 img");
-  const typoGhrapy = section01[0];
-  const starDust = section01[1];
-  const Earth = section01[2];
-  const lightYear = section01[3];
-
-  window.addEventListener("click", function () {
-    console.log(window.innerHeight);
-    console.log("what");
-  });
-
-  window.addEventListener("mousemove", (addEventListener) => {
-    x = addEventListener.pageX - window.innerWidth / 2;
-    y = addEventListener.pageY - window.innerWidth / 2;
-  });
-  4;
-
-  const loop = (requestAnimationFrame) => {
-    targetX += (x - targetX) * speed;
-    targetY += (y - targetY) * speed;
-
-    typoGhrapy.style.transform = `translateX(${targetX / 20}px)`;
-    Earth.style.transform = `translateX(${targetX / 20}px)`;
-    starDust.style.transform = `translateX(${targetX / 8}px)`;
-    lightYear.style.transform = `translateX(${targetX / 12}px)`;
-  };
-  loop(window.requestAnimationFrame);
-
-  window.addEventListener("mousemove", function (addEventListener) {
-    const cursorDefaultInner = document.querySelector(".cursor_default_inner");
-    const cursorTraceInner = document.querySelector(".cursor_Trace_Inner");
-    cursorDefaultInner.style.top = addEventListener.clientY += "px";
-    cursorDefaultInner.style.left = addEventListener.clientX += "px";
-    cursorTraceInner.style.top = addEventListener.clientY += "px";
-    cursorTraceInner.style.left = addEventListener.clientX += "px";
-    window.requestAnimationFrame(loop);
-  });
 
   let scrollNum = 0;
   let dimd = document.getElementById("dimd");
@@ -51,7 +10,7 @@ if (matchMedia("only screen and (max-width: 768px)").matches) {
     documentHeight =
       document.body.scrollHeight + coverHeight - window.innerHeight;
     dimd.style.backgroundColor = `rgba(11, 18, 21, ${
-      (1.55 + scrollNum) / 800
+      (2.55 + scrollNum) / 500
     })`;
   });
 
