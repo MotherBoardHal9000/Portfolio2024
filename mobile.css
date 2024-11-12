@@ -44,8 +44,8 @@ body {
     width: 420px;
     height: fit-content;
     position: absolute;
-    bottom: 15px;
-    left: 15px;
+    bottom: 55px;
+    left: 25px;
   }
 
   .mobileTyphoGraphy img {
@@ -80,7 +80,7 @@ body {
     background-size: cover;
     left: -5%;
     transform: translateX(-5%);
-    top: -90px;
+    top: -150px;
   }
 
   .starDust {
@@ -98,7 +98,7 @@ body {
     height: 300px;
     position: absolute;
     left: 0px;
-    top: -65px;
+    top: -115px;
   }
 
   .section01 {
@@ -505,7 +505,7 @@ body {
     transform: translateX(-8%);
     line-height: 70px;
     position: absolute;
-    bottom: 50px;
+    bottom: 130px;
     opacity: 0;
   }
 
