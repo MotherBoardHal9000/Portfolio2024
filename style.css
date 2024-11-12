@@ -232,6 +232,10 @@ a {
   z-index: 5;
 }
 
+.mobileTyphoGraphy {
+  display: none;
+}
+
 .section01 {
   position: relative;
   margin: 0 auto;
