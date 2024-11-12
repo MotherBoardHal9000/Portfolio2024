@@ -1,13 +1,20 @@
+html,
+body {
+  width: 100%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+  transition: all 1s;
+}
+
 body {
   background-color: #0b1215;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
-}
-
-body div {
-  overflow: hidden;
-  overflow-y: hidden;
+  width: 100vw;
+  height: fit-content;
+  position: relative;
+  overflow-x: hidden;
 }
 
 @media only screen and (max-width: 768px) {
@@ -40,10 +47,6 @@ body div {
   .section01 div {
     position: absolute;
   }
-  .section01 div img {
-    transform-style: preserve-3d;
-    transform-origin: 50% 50%;
-  }
 
   .Galaxy {
     position: absolute;
@@ -60,8 +63,8 @@ body div {
     width: 550px;
     height: 550px;
     background-size: cover;
-    left: -20%;
-    transform: translateX(-20%);
+    left: -5%;
+    transform: translateX(-5%);
     top: -90px;
   }
 
@@ -70,9 +73,8 @@ body div {
   }
 
   .lightYear {
-    width: 200px;
-    height: 200px;
-
+    width: 400px;
+    height: 400px;
     left: 80px;
   }
 
@@ -80,7 +82,7 @@ body div {
     width: 300px;
     height: 300px;
     position: absolute;
-    left: -400px;
+    left: 0px;
     top: 0px;
   }
 
@@ -138,8 +140,8 @@ body div {
     font-weight: 600;
     position: absolute;
     top: 75px;
-    left: 45%;
-    transform: translateX(-45%);
+    padding-left: 28%;
+    width: 100vw;
   }
   /*section03*/
   .section03 {
@@ -155,6 +157,8 @@ body div {
     background-position: center;
     background-color: transparent;
     position: absolute;
+    width: 100vw;
+    height: fit-content;
   }
 
   .bodyBackgroundII {
@@ -170,7 +174,7 @@ body div {
   }
 
   .section03Contents {
-    width: 70vw;
+    width: 85vw;
     height: 1600px;
     margin: 0 auto;
     position: relative;
@@ -181,7 +185,7 @@ body div {
     position: absolute;
     top: 30px;
     left: 50%;
-    transform: translateX(-55%);
+    transform: translateX(-50%);
     width: 100vw;
     height: fit-content;
   }
@@ -216,27 +220,6 @@ body div {
     display: none;
   }
 
-  #scroll-Down-text {
-    display: none;
-  }
-
-  @keyframes UpandDown {
-    0% {
-      transform: translateY(0);
-    }
-
-    50% {
-      transform: translateY(-20px);
-    }
-
-    100% {
-      transform: translateY(0px);
-    }
-  }
-  #downArrowIcon {
-    display: none;
-  }
-
   .R2D2 img {
     width: 220px;
     height: 290px;
@@ -252,8 +235,8 @@ body div {
     top: 600px;
     left: 50%;
     transform: translateX(-50%);
-    width: 70vw;
-    height: 1000px;
+    width: 100vw;
+    height: 900px;
     background: linear-gradient(
       135deg,
       rgba(255, 255, 255, 0.1),
@@ -263,16 +246,14 @@ body div {
     -webkit-backdrop-filter: blur(10px);
     border: 1px solid rgba(255, 255, 255, 0.18);
     box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
-    padding: 5px;
   }
 
   #list-item-wrapper {
     position: absolute;
     left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    width: 75vw;
-    padding: 5px;
+    top: 20%;
+    transform: translateX(-50%) translateY(-20%);
+    width: 90vw;
   }
 
   .list-item {
@@ -287,8 +268,8 @@ body div {
     background-image: url(./img/dark_house.png);
     background-size: 53px 53px;
     content: "";
-    width: 51px;
-    height: 53px;
+    width: 50px;
+    height: 50px;
   }
 
   #sec03IntroMain {
@@ -302,12 +283,14 @@ body div {
     transform: translateX(-50%) translateY(-10%);
     font-size: 70px;
     font-weight: 400;
+    display: none;
   }
   #sec3Scroll-Down-text {
     color: #ffffff;
     opacity: 0.6;
     font-size: 1rem;
     margin-top: 40px;
+    display: none;
   }
 
   .list-item#on {
@@ -343,15 +326,45 @@ body div {
     font-size: 3rem;
     font-weight: 600;
     margin-top: 80px;
+    display: none;
+  }
+
+  #panel1Img {
+    height: 420px;
+    position: relative;
+    background-color: #0b1215;
+    display: none;
+  }
+
+  #miniCarImg {
+    width: 220px;
+    height: 220px;
+    position: absolute;
+    right: 0px;
+    bottom: 150px;
+    display: none;
+  }
+
+  #proJects {
+    color: #ffffff;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 80px;
+    font-weight: 600;
+    display: none;
   }
 
   .skillBtn {
-    display: none;
+    width: 1200px;
+    height: 100px;
+    position: absolute;
+    margin-top: 230px;
+    right: 50px;
   }
 
   .usedSkill {
     color: grey;
-    display: none;
   }
 
   .skillBtn .skillList {
@@ -366,7 +379,6 @@ body div {
     font-weight: 300;
     float: right;
     margin: 10px;
-    display: none;
   }
 
   .skillList:nth-child(3) {
@@ -382,23 +394,13 @@ body div {
     border: 1px solid transparent;
   }
   .section04Contents {
-    width: 100vw;
-    height: 3100px;
     margin: 0 auto;
     display: none;
   }
 
-  .section04Contents div {
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-  }
-
   .mobileSection {
     width: 100vw;
-    height: 5100px;
-
+    height: 2900px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -450,39 +452,30 @@ body div {
     width: 100vw;
     height: 1000px;
     position: relative;
-    margin: 0 auto;
     text-align: center;
   }
 
   #bodyBackground {
-    position: absolute;
-    bottom: 300px;
-    width: 90vw;
-    height: 600px;
-    left: 50%;
-    transform: translateX(-50%);
-    border: 1px solid red;
+    display: none;
   }
 
   #saZabi {
-    width: 100vw;
-    height: 500px;
-    position: relative;
-    margin: 0 auto;
-    bottom: 300px;
-    border: 1px solid red;
+    width: 95vw;
+    height: 490px;
   }
 
   #fixedDescription {
-    width: 100vw;
+    width: 90vw;
     height: fit-content;
     color: white;
-    font-size: 1rem;
+    font-size: 2rem;
     font-weight: 800;
     text-align: center;
+    left: 8%;
+    transform: translateX(-8%);
     line-height: 70px;
     position: absolute;
-    bottom: 100px;
+    bottom: 50px;
     opacity: 0;
   }
 
@@ -492,25 +485,17 @@ body div {
     height: 900px;
     background-color: #0b1215;
     position: relative;
+    margin-top: 200px;
   }
 
   .section06Contents {
-    width: 100vw;
-    height: 900px;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    width: 90vw;
+    height: 600px;
   }
 
-  .section06Contents img {
+  .section06Contents img #nitingGail {
     position: absolute;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 100%;
-    height: 700px;
-    bottom: 200px;
-    background-size: contain;
+    border: 1px solid white;
   }
 
   /*section07*/
@@ -528,6 +513,7 @@ body div {
     left: 50%;
     transform: translateX(-50%);
     color: white;
+    border: 1px solid red;
   }
 
   .section07Contents h2 {
@@ -567,6 +553,7 @@ body div {
     height: 100%;
     margin: 0 auto;
     position: relative;
+    border: 1px solid red;
   }
 
   .white-wrapperContents img {

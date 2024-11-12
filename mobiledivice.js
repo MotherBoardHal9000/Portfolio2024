@@ -30,8 +30,8 @@ if (matchMedia("only screen and (max-width: 768px)").matches) {
 
   //
   //
-  const fixedDescriptionAppearTiming = 9010;
-  const fixedDescriptionAppearEnds = 9180;
+  const fixedDescriptionAppearTiming = 6630;
+  const fixedDescriptionAppearEnds = 6900;
   const fixedDescription = document.getElementById("fixedDescription");
   const sec05 = document.getElementById("sec05");
   const sec05Contents = document.getElementById("sec05Contents");
@@ -51,7 +51,7 @@ if (matchMedia("only screen and (max-width: 768px)").matches) {
         (document.documentElement.clientHeight - element.offsetHeight) / 2
     ) {
       element.style.position = "fixed";
-      element.style.top = "50%";
+      element.style.top = "40%";
       element.style.left = "50%";
       element.style.transform = "translate(-50%, -50%)";
     } else {
@@ -84,17 +84,6 @@ if (matchMedia("only screen and (max-width: 768px)").matches) {
 
     const scrollYBottom =
       window.scrollY + window.document.documentElement.clientHeight;
-
-    if (
-      scrollYBottom > panel1Img.offsetTop &&
-      scrollYBottom < panel1Img.offsetTop + panel1Img.offsetHeight + 100
-    ) {
-      const translateX =
-        390 -
-        (390 * 1.3 * (scrollYBottom - panel1Img.offsetTop)) /
-          (panel1Img.offsetHeight + 100);
-      panel1Img.style.transform = `translate(${translateX}px)`;
-    }
 
     centerElement("sec05Contents", "sec05");
 
