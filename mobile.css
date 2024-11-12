@@ -417,14 +417,33 @@ body {
 
   .mobileSection {
     width: 100vw;
-    height: 2700px;
+    height: 2000px;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 40px;
     margin-top: 250px;
+    perspective: 1000px;
+    perspective-origin: bottom;
     color: white;
+  }
+
+  .mobileSection li:hover {
+    position: relative;
+    transform: rotateX(-10deg) translateZ(-10px) translateY(-160px);
+  }
+
+  .mobileSection li {
+    width: 90vw;
+    height: 700px;
+    perspective: 700px;
+    transform-style: preserve-3d;
+    transform: rotateX(-10deg) translateZ(-15px);
+    transition: color 0.6s, background 0.6s, transform 0.6s ease;
+    border-radius: 50px;
+    box-shadow: 0 -15px 32px rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    border-top: 10px solid #000;
   }
 
   .mobileSection h2 {
@@ -436,37 +455,26 @@ body {
 
   .mobileSection p {
     padding: 30px;
-    line-height: 25px;
   }
 
   .airBnbMobile {
-    width: 80vw;
-    height: 500px;
     background-color: #ff5a5f;
     border-radius: 25px;
   }
   .retroBoyMobile {
-    width: 80vw;
-    height: 500px;
     background-color: #308ac5;
     border-radius: 25px;
   }
   .snuMobile {
-    width: 80vw;
-    height: 500px;
     background-color: #1c2f57;
     border-radius: 25px;
   }
   .imagiNationMobile {
-    width: 80vw;
-    height: 500px;
     background-image: url(./img/bg_75.webp);
     background-size: cover;
     border-radius: 25px;
   }
   .rebeHayanMobile {
-    width: 80vw;
-    height: 500px;
     background-color: #a37dec;
     border-radius: 25px;
   }
