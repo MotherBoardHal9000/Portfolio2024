@@ -251,7 +251,7 @@ body {
     left: 50%;
     transform: translateX(-50%);
     width: 90vw;
-    height: 1000px;
+    height: 1100px;
 
     background: linear-gradient(
       135deg,
@@ -417,13 +417,13 @@ body {
 
   .mobileSection {
     width: 100vw;
-    height: 2900px;
+    height: 2700px;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 40px;
-    margin-top: 50px;
+    margin-top: 250px;
     color: white;
   }
 
@@ -560,7 +560,7 @@ body {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    margin-top: 300px;
+    margin-top: 150px;
     text-align: left;
   }
 
