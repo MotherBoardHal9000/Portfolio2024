@@ -244,6 +244,7 @@ body div {
     left: 45%;
     margin-top: 0px;
     transform: translateX(-45%);
+    z-index: 15;
   }
 
   .sec03GlassMophismWrapper {
@@ -251,7 +252,7 @@ body div {
     top: 600px;
     left: 50%;
     transform: translateX(-50%);
-    width: 80vw;
+    width: 70vw;
     height: 1000px;
     background: linear-gradient(
       135deg,

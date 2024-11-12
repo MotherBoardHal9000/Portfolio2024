@@ -110,7 +110,7 @@ function centerElement(elementId) {
 
 window.addEventListener("scroll", function (addEventListener) {
   console.log("over"); //콘솔창에 스크롤 높이를 구하는 방법이다 3476.
-  console.log(window.scrollY);
+  //console.log(window.scrollY);
   if (document.getElementById("on"))
     document.getElementById("on").removeAttribute("id");
   if (
