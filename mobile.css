@@ -498,10 +498,11 @@ body {
 
   #bodyBackground {
     display: block;
+    height: 1200px;
   }
 
   #saZabi {
-    width: 95vw;
+    width: 90vw;
     height: 490px;
   }
 
@@ -510,13 +511,12 @@ body {
     height: fit-content;
     color: white;
     font-size: 40px;
-
     text-align: center;
     left: 8%;
     transform: translateX(-8%);
     line-height: 70px;
     position: absolute;
-    bottom: 10px;
+    bottom: 50px;
     opacity: 0;
   }
 
@@ -546,7 +546,7 @@ body {
 
   .section06Contents img {
     display: block;
-    width: 75vw;
+    width: 65vw;
     height: 600px;
   }
 
@@ -609,7 +609,7 @@ body {
   .white-wrapperContents img {
     position: absolute;
     left: 23px;
-    top: 420px;
+    top: 320px;
     width: 90vw;
     height: 200px;
   }
