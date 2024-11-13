@@ -1,20 +1,20 @@
 html,
 body {
-  width: 100%;
+  width: 100vw;
   overflow-x: hidden;
   scroll-behavior: smooth;
   transition: all 1s;
+  background-color: #0b1215;
 }
 
 body {
   background-color: #0b1215;
   padding: 0;
-  margin: 0;
+  margin: 0px;
   scroll-behavior: smooth;
-  width: 100vw;
+
   height: fit-content;
   position: relative;
-  overflow-x: hidden;
 }
 
 @media only screen and (max-width: 768px) {
@@ -34,7 +34,6 @@ body {
     display: none;
   }
   .h1Typoghrapy {
-    display: none;
     opacity: 0;
   }
 
@@ -417,13 +416,14 @@ body {
 
   .mobileSection {
     width: 100vw;
-    height: 2000px;
+    height: 1800px;
     position: relative;
     display: flex;
+    justify-content: first baseline;
     flex-direction: column;
     align-items: center;
     margin-top: 250px;
-    perspective: 1000px;
+    perspective: 700px;
     perspective-origin: bottom;
     color: white;
   }
@@ -431,6 +431,7 @@ body {
   .mobileSection li:hover {
     position: relative;
     transform: rotateX(-10deg) translateZ(-10px) translateY(-160px);
+    transition: all 0.8s;
   }
 
   .mobileSection li {
@@ -440,7 +441,7 @@ body {
     transform-style: preserve-3d;
     transform: rotateX(-10deg) translateZ(-15px);
     transition: color 0.6s, background 0.6s, transform 0.6s ease;
-    border-radius: 50px;
+    border-radius: 25px;
     box-shadow: 0 -15px 32px rgba(0, 0, 0, 0.25);
     box-sizing: border-box;
     border-top: 10px solid #000;
@@ -455,6 +456,7 @@ body {
 
   .mobileSection p {
     padding: 30px;
+    line-height: 25px;
   }
 
   .airBnbMobile {
@@ -477,6 +479,7 @@ body {
   .rebeHayanMobile {
     background-color: #a37dec;
     border-radius: 25px;
+    padding: 70px;
   }
 
   /*section05*/
@@ -494,7 +497,7 @@ body {
   }
 
   #bodyBackground {
-    display: none;
+    display: block;
   }
 
   #saZabi {
@@ -506,21 +509,21 @@ body {
     width: 90vw;
     height: fit-content;
     color: white;
-    font-size: 2rem;
-    font-weight: 800;
+    font-size: 40px;
+
     text-align: center;
     left: 8%;
     transform: translateX(-8%);
     line-height: 70px;
     position: absolute;
-    bottom: 130px;
+    bottom: 10px;
     opacity: 0;
   }
 
   /*section06*/
   .section06 {
     width: 100vw;
-    height: 900px;
+    height: 200px;
     background-color: #0b1215;
     position: relative;
     margin-top: 300px;
@@ -529,17 +532,24 @@ body {
   .section06Contents {
     width: 100vw;
     height: 600px;
+    position: absolute;
+    top: 0px;
   }
 
-  .section06Contents img #nitingGail {
-    position: absolute;
-    border: 1px solid white;
+  #nitingGail {
+    display: none;
+  }
+
+  .section06Contents img {
+    display: block;
+    width: 75vw;
+    height: 600px;
   }
 
   /*section07*/
   .section07 {
     width: 100vw;
-    height: 1000px;
+    height: 100vh;
     background-color: #0b1215;
     position: relative;
   }
@@ -549,6 +559,8 @@ body {
     height: 1000px;
     position: absolute;
     color: white;
+    top: 0px;
+    padding-bottom: 500px;
   }
 
   .section07Contents h2 {
@@ -592,11 +604,10 @@ body {
 
   .white-wrapperContents img {
     position: absolute;
-    left: 75px;
-    top: 30px;
-    width: 650px;
-    height: 400px;
-    display: none;
+    left: 23px;
+    top: 420px;
+    width: 90vw;
+    height: 200px;
   }
 
   .white-wrapperContents img ~ img {
