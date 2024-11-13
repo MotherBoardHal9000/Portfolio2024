@@ -503,8 +503,8 @@ body {
   }
 
   #saZabi {
-    width: 520px;
-    height: 650px;
+    max-width: 480px;
+    max-height: 590px;
   }
 
   #fixedDescription {
