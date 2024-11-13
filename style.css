@@ -1027,6 +1027,10 @@ a {
   bottom: 0px;
 }
 
+#curioSity {
+  display: none;
+}
+
 /*section07*/
 .section07 {
   width: 100vw;
