@@ -1,4 +1,4 @@
-if (matchMedia("only screen and (max-width: 767px)").matches) {
+if (matchMedia("(min-width: 768px) and (max-width: 1280px)").matches) {
   let x = 0;
   let y = 0;
   let targetX = 0;
@@ -82,7 +82,7 @@ if (matchMedia("only screen and (max-width: 767px)").matches) {
         (document.documentElement.clientHeight - element.offsetHeight) / 2
     ) {
       element.style.position = "fixed";
-      element.style.top = "40%";
+      element.style.top = "50%";
       element.style.left = "50%";
       element.style.transform = "translate(-50%, -50%)";
     } else {

@@ -16,7 +16,7 @@ body {
   position: relative;
 }
 
-@media (min-width: 769px) and (max-width: 1280px) {
+@media (min-width: 768px) and (max-width: 1280px) {
   .cursor {
     display: none;
   }
@@ -93,10 +93,11 @@ body {
   }
 
   .lightYear img {
-    width: 500px;
+    width: 65vw;
     height: 500px;
     position: absolute;
-    left: 100px;
+    left: 50%;
+    transform: translateX(-50%);
     top: -25px;
   }
 
@@ -502,8 +503,8 @@ body {
   }
 
   #saZabi {
-    width: 80vw;
-    height: 76vh;
+    width: 63vw;
+    height: 63vh;
   }
 
   #fixedDescription {
@@ -546,8 +547,9 @@ body {
 
   .section06Contents img {
     display: block;
-    width: 65vw;
-    height: 600px;
+    width: 45vw;
+    height: 400px;
+    margin-bottom: 200px;
   }
 
   /*section07*/
